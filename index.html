@@ -1,0 +1,824 @@
+<html lang="es"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="data:image/png;base64,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">
+    <title>Hoek Brown</title>
+    
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- BootStrap Css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Iconos de Fontawesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+  <!-- Inicio de Header -->
+  <header class="container-fluid">
+    <div class="row bg-primary text-white">
+      <div class="col-8">
+        <h4 class="pt-1 pl-4">Egeos - Hoek Brown</h4>
+      </div>
+      <div class="col-4 ">
+        <h3 class="pt-2 pr-3 text-right"><i class="fas fa-user-circle"></i></h3>
+      </div>
+    </div>
+  </header>
+
+  <!-- Inicio de Opciones -->
+  <nav class="container-fluid bg-plomo py-1 pl-4">
+    <div>
+      <button type="button" class="btn btn-success"><i class="fas fa-sync-alt"></i> Refrescar</button>
+      <button type="button" class="btn btn-danger"><i class="fas fa-save"></i> Guardar</button>
+      <button type="button" class="btn btn-light p-2"><i class="fas fa-file"></i></button>
+      <button type="button" class="btn btn-light p-2"><i class="fas fa-print"></i></button>
+      <button type="button" class="btn btn-light p-2"><i class="fas fa-file-excel"></i></button>
+      <button type="button" class="btn btn-light p-2"><i class="fas fa-file-pdf"></i></button>
+      <button type="button" class="btn btn-light p-2"><i class="fas fa-share-alt"></i></button>
+    </div>
+  </nav>      
+ 
+  <!-- Inicio de Cuerpo-->
+  <div class="container-fluid pt-2">
+    <!-- Generador de Fila-->
+    <div class="row">
+      <!-- Generador de Columna izquierda-->
+      <div class="col-2">
+
+        <!-- Inicio de Hoek-Brown Classification-->
+        <div class=" border d-flex flex-column">
+          <!-- Título de la caja-->
+          <div class="p-1 bg-primary text-white text-center"><strong class="tamaño-pequeño">Hoek-Brown Classification</strong></div>
+
+          <div class="flex-grow-1" style="overflow-y: auto;">
+            <div class="d-flex border">
+              <div class="w-100 p-1">        
+                <div class="d-flex">
+                  <div class="w-100">
+
+                    <!-- RELLENADO DE DATOS-->
+
+                    <!-- llenado de sigci -->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right ">
+                            <p class="pr-1">&#963ci</p>
+                          </div>
+                          <div class="col-4 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                          <div class="col-3 p-0 text-center">
+                            <p class=""> MPa  </p>
+                          </div>
+                          <div class="col-2 p-0">
+                            <!-- Boton de valores de sigci [Hacer que el data-target="#xyz" sea igual con id="xyz" del modal] -->
+                            <button type="button" class="btn btn-light p-2 bg-plomo" data-toggle="modal" data-target="#sigci"> <i class="fas fa-external-link-alt"></i></button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--modal de valores de sigci [Hacer que el id="xyz" sea igual con data-target="#xyz" del boton]-->
+                      <div class="modal fade bd-example-modal-lg" id="sigci" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="myLargeModalLabel">Resistencia a la compresión uniaxial intacta</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <table class="table">
+                                <thead class="thead-light">
+                                  <tr>
+                                    <th scope="col">Estimación de campo de fuerza</th>
+                                    <th scope="col">Ejemplos</th>
+                                    <th scope="col">Fuerza(MPa)</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td >La muestra solo se puede astillar con un martillo geológico</td>
+                                    <td>Basalto fresco, pedernal, diabasa, gneis, granito, cuarcita</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">>250</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>El espécimen requiere muchos golpes de martillo geológico para fracturarlo.</td>
+                                    <td>Anfibolita, arenisca, basalto, gabro, gneis, granodiorita, piedra caliza, mármol, riolita, toba</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">100-250</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>El espécimen requiere más de un golpe de martillo geológico para fracturarlo.</td>
+                                    <td>Caliza, mármol, filita, arenisca, esquisto, pizarra.</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">50-100</button>
+                                    </td>
+                                  </tr>
+
+                                  <tr>
+                                    <td>Cannot be scraped pr peeñed with a pocket knife, specimen can be fractured with a single blow from a geological hammer</td>
+                                    <td>Claystine, coal, concrete, shist, shale, siltstone</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">25-50</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Can be peeled with a pocket kfine with difficulty, shallow indentation made by firm blow with point of a geological hammer</td>
+                                    <td>Chalk, rockstar, potash</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">5-25</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Crumbles under firm blows with point of a geological hammer, can be peeled by a pocket kfine</td>
+                                    <td>Highly weathered or altered rock</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">1-5</button>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td>Indented by thumbnail</td>
+                                    <td>Stiff fault gouge</td>
+                                    <td>
+                                      <button type="button" class="btn btn-light border py-1">0.25-1</button>
+                                    </td>
+                                  </tr>
+
+
+                                </tbody>
+                              </table>
+                            </div>
+                            <div class="modal-footer">
+                              <span class="text-left mr-5">
+                                Uniaxial Compressive Strenght (&#963ci) <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> MPa
+                              </span>
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                              <button type="button" class="btn btn-primary " data-dismiss="modal">Ok</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin de llenado de sigci -->
+
+                    <!-- llenado de GSI-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>GSI</p>
+                          </div>  
+                          <div class="col-4 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                          <div class="col-3 p-0">
+                            <p>   </p>
+                          </div>
+                          <div class="col-2 p-0">
+                            <!-- Boton de valores de sigci [Hacer que el data-target="#xyz" sea igual con id="xyz" del modal] -->
+                            <button type="button" class="btn btn-light p-2 bg-plomo" data-toggle="modal" data-target="#GSI"> <i class="fas fa-external-link-alt"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!--modal valores de GSI-->
+                      <div class="modal fade" id="GSI" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Pick GSI value</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                    <!-- Fin de llenado de GSI-->
+
+                    <!-- Inicio de llenado de Mi-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>mi</p>
+                          </div>  
+                          <div class="col-4 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                          <div class="col-3 p-0">
+                            <p>   </p>
+                          </div>
+                          <div class="col-2 p-0">
+                            <!-- Boton de valores de Mi [Hacer que el data-target="#xyz" sea igual con id="xyz" del modal] -->
+                            <button type="button" class="btn btn-light p-2 bg-plomo" data-toggle="modal" data-target="#Mi"> <i class="fas fa-external-link-alt"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!--modal valores de Mi-->
+                      <div class="modal fade" id="Mi" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Pick Mi value</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>        
+                    <!-- Fin de llenado de Mi-->
+
+                    <!-- Inicio de llenado de D-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>D</p>
+                          </div>  
+                          <div class="col-4 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                          <div class="col-3 p-0">
+                            <p>   </p>
+                          </div>
+                          <div class="col-2 p-0">
+                            <!-- Boton de valores de D [Hacer que el data-target="#xyz" sea igual con id="xyz" del modal] -->
+                            <button type="button" class="btn btn-light p-2 bg-plomo" data-toggle="modal" data-target="#D"> <i class="fas fa-external-link-alt"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!--modal valores de D-->
+                      <div class="modal fade" id="D" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Disturbance Factor D</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <!-- Fin de llenado de D-->
+
+                    <!-- Inicio de llenado de Ei-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>Ei</p>
+                          </div>  
+                          <div class="col-4 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                          <div class="col-3 p-0">
+                            <p class="text-center"> MPa </p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>  
+                    <!-- Fin de llenado de Ei-->
+
+                    <!-- Inicio de llenado de MR-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>MR</p>
+                          </div>  
+                          <div class="col-4 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                          <div class="col-3 p-0">
+                            <p>   </p>
+                          </div>
+                          <div class="col-2 p-0">
+                            <!-- Boton de valores de MR [Hacer que el data-target="#xyz" sea igual con id="xyz" del modal] -->
+                            <button type="button" class="btn btn-light p-2 bg-plomo" data-toggle="modal" data-target="#MR"> <i class="fas fa-external-link-alt"></i></button>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <!--modal valores de MR-->
+                      <div class="modal fade" id="MR" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalCenterTitle">Estimate Ei using a Modulus Ratio (Ei=MR*Sigci)</h5>
+                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                              <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>  
+                    <!-- Fin de llenado de MR-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de Hoek-Brown Classification-->
+
+        <!-- Inicio de Hoek-Brown Criterion-->
+        <div class=" border d-flex flex-column">
+          <!-- Título de la caja-->
+          <div class="p-1 bg-primary text-white text-center"><strong class="tamaño-pequeño">Hoek-Brown Criterion</strong></div>
+
+          <div class="flex-grow-1" style="overflow-y: auto;">
+            <div class="d-flex border">
+              <div class="w-100 p-1">        
+                <div class="d-flex">
+                  <div class="w-100">
+
+                    <!-- RELLENADO DE DATOS-->
+
+                    <!-- llenado de mb-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right ">
+                            <p class="pr-1">mb</p>
+                          </div>
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin de llenado de mb -->
+
+                    <!-- llenado de s-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>s</p>
+                          </div>  
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                    <!-- Fin de llenado de s-->
+
+                    <!-- Inicio de llenado de a-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño">
+                        <div class="row"> 
+                          <div class="col-3 p-0 text-right pr-1">
+                            <p>a</p>
+                          </div>  
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="#" value="0" style="width: 55px;"> 
+                          </div>
+                        </div>
+
+                        <!-- Formula-->
+                        <div class="row">
+                          <div class="col-12 p-0 pt-1">
+                            <img src="img/Formula de Hoek Brown.png" alt="" class="d-block w-100 ">
+                          </div>
+                        </div>
+
+                        <!-- Botón de detalles-->
+                        <div class="row">
+                          <div class="col-12 text-center pt-1">
+                            <button type="button" class="btn btn-outline-info btn-block p-1 mt-1" data-toggle="modal" data-target="#detalles"><i class="fas fa-info-circle"></i> Detalles</button>
+                          </div>
+                          <!-- Modal del Boton de Detalles-->
+                          <div class="modal fade" id="detalles" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="exampleModalCenterTitle">Aqui van los detalles</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+
+                                <div class="modal-body">
+                                  <!-- Tabla de Detalles-->
+                                  <table class="table">
+                                    <thead class="thead-light">
+
+                                      <tr>
+                                        <th scope="col">Hoek-Brown Classification</th>
+                                        <th scope="col">Failure Envelope Range</th>
+                                      </tr>
+
+                                    </thead>
+                                    <tbody>
+                                      <tr>
+                                        <td>Rellenar datos</td>
+                                        <td>Rellenar datos</td>
+                                      </tr>
+                                      <tr>
+                                        <td>Rellenar datos</td>
+                                        <td>Rellenar datos</td>
+                                      </tr>
+                                    </tbody>
+                                  </table>
+                                </div>
+
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                  <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                
+                      </div>
+                      
+                      
+                    </div>        
+                    <!-- Fin de llenado de a-->
+
+                    
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de Hoek-Brown Criterion-->
+
+
+      </div>
+      <!-- Fin de Generador de Columna izquierda-->
+
+
+
+
+
+
+
+
+      <!--Generador de Columna Central-->
+      <div class="col-8">
+        <h1 class="text-center">Aquí van los gráficos</h1>
+      </div>
+      <!--Fin deGenerador de Columna Central-->
+
+
+
+
+
+
+
+      <!--Generador de Columna Derecha-->
+      <div class="col-2">
+
+        <!-- Inicio de Failure Envelope Range-->
+        <div class=" border d-flex flex-column">
+          <!-- Título de la caja-->
+          <div class="p-1 bg-primary text-white text-center"><strong class="tamaño-pequeño">Failure Envelope Range</strong></div>
+
+          <div class="flex-grow-1" style="overflow-y: auto;">
+            <div class="d-flex border">
+              <div class="w-100 p-1">        
+                <div class="d-flex">
+                  <div class="w-100">
+
+                    <!-- RELLENADO DE DATOS-->
+
+                    <!-- llenado/eleccion de application-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-6 p-0 text-right ">
+                            <p class="pr-1">Application</p>
+                          </div>
+
+                          <div class="col-6 p-0">
+                            <input type="number" name="0" placeholder="slope" value="" style="width: 85px;"> 
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin de llenado/eleccion de application -->
+
+                    <!-- llenado de sig3max-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-6 p-0 text-right ">
+                            <p class="pr-1">&#963<span>3máx</span></p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-3 p-0 text-right ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>               
+                    <!-- Fin de llenado de sig3max-->
+
+                    <!-- Inicio de llenado de Unit Weight-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-6 p-0 text-right ">
+                            <p class="pr-1">Unit Weight</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-3 p-0 text-right ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>        
+                    <!-- Fin de llenado de Unit Weight-->
+
+
+                    <!-- Inicio de llenado de Slop Height-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-6 p-0 text-right ">
+                            <p class="pr-1">Slop Height</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-3 p-0 text-right ">
+                            <p class="pr-1">m</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>        
+                    <!-- Fin de llenado de Slop Heightt-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de Failure Envelope Range-->
+
+        <!-- Inicio de Mohr-Coulomb Fit-->
+        <div class=" border d-flex flex-column">
+          <!-- Título de la caja-->
+          <div class="p-1 bg-primary text-white text-center"><strong class="tamaño-pequeño">Mohr-Coulomb Fit</strong></div>
+
+          <div class="flex-grow-1" style="overflow-y: auto;">
+            <div class="d-flex border">
+              <div class="w-100 p-1">        
+                <div class="d-flex">
+                  <div class="w-100">
+
+                    <!-- RELLENADO DE DATOS-->
+
+                    <!-- llenado de c-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-4 p-0 text-right ">
+                            <p class="pr-1">c</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-4 p-0 text-center ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin de llenado de c -->
+
+                    <!-- llenado de phi-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-4 p-0 text-right ">
+                            <p class="pr-1">phi</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-4 p-0 text-center ">
+                            <p class="pr-1">deg</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>               
+                    <!-- Fin de llenado de phi-->
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de Mohr-Coulomb Fit-->
+
+        <!-- Inicio de Rock Mass Parameters-->
+        <div class=" border d-flex flex-column">
+          <!-- Título de la caja-->
+          <div class="p-1 bg-primary text-white text-center"><strong class="tamaño-pequeño">Rock Mass Parameters</strong></div>
+
+          <div class="flex-grow-1" style="overflow-y: auto;">
+            <div class="d-flex border">
+              <div class="w-100 p-1">        
+                <div class="d-flex">
+                  <div class="w-100">
+
+                    <!-- RELLENADO DE DATOS-->
+
+                    <!-- llenado de sigt-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-4 p-0 text-right ">
+                            <p class="pr-1">&#963t</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-4 p-0 text-center ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Fin de llenado de sigt-->
+
+                    <!-- llenado de sigc-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-4 p-0 text-right ">
+                            <p class="pr-1">&#963c</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-4 p-0 text-center ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>               
+                    <!-- Fin de llenado de sigc-->
+
+
+                    <!-- Inicio de llenado de sigcm-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-4 p-0 text-right ">
+                            <p class="pr-1">&#963cm</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-4 p-0 text-center ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                    <!-- Fin de llenado de sigcm-->
+
+                    <!-- Inicio de llenado de Erm-->
+                    <div class="py-0">
+                      <div class="container-fluid tamaño-pequeño ">
+                        <div class="row"> 
+
+                          <div class="col-4 p-0 text-right ">
+                            <p class="pr-1">Erm</p>
+                          </div>
+                          
+                          <div class="col-3 p-0">
+                            <input type="number" name="0" placeholder="N°" value="0" style="width: 55px;"> 
+                          </div>
+
+                          <div class="col-4 p-0 text-center ">
+                            <p class="pr-1">MPa</p>
+                          </div>
+                          
+                        </div>
+                      </div>
+                    </div>    
+                    <!-- Fin de llenado de Erm-->
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin de Rock Mass Parameters-->
+
+        
+      </div>
+      <!--Fin de Generador de Columna Derecha-->
+
+    </div>
+    <!-- Fin de Generador de Fila-->
+            
+  </div> <!-- Contenedor -->
+        
+        
+
+
+  <!--  BOOTSTRAP JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
